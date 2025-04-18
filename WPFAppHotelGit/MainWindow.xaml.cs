@@ -32,6 +32,7 @@ namespace WPFAppHotelGit
             var response = client.DownloadString("http://localhost:64788/api/Hotels");
             CurrentHotels = JsonConvert.DeserializeObject<List<Hotel>>(response);
             DataContext = this;
+            //commit zd
         }
     }
 }
